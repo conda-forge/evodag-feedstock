@@ -1,5 +1,5 @@
 {% set name = "evodag" %}
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EvoDAG-{{ version }}.tar.gz
-  sha256: 397a663cb4d30f1df994bbf4c6147bfdd7e525826a5cb7c16367b4d19d6af507
+  sha256: 916adb91cf44b41bd42c6a556b960b7a53ef15325fb980c260224cf913235505
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -20,7 +20,7 @@ requirements:
     - cython
     - numpy
     - setuptools
-    - sparsearray    
+    - sparsearray
     - pip
     - python
   run:
