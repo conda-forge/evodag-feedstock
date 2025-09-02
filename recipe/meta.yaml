@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EvoDAG-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/EvoDAG-{{ version }}.tar.gz
   sha256: 916adb91cf44b41bd42c6a556b960b7a53ef15325fb980c260224cf913235505
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 4
 
 requirements:
   build:
