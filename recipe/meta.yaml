@@ -1,17 +1,17 @@
 {% set name = "evodag" %}
-{% set version = "0.17.2" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/EvoDAG-{{ version }}.tar.gz
-  sha256: 916adb91cf44b41bd42c6a556b960b7a53ef15325fb980c260224cf913235505
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 495d61e8a03ded4ce3dedd09952e9e1709a88f6e42596defe9a6b34aba7a57cd
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 5
+  number: 0
 
 requirements:
   build:
